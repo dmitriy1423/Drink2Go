@@ -16,5 +16,22 @@
   color: $base-white;
   text-decoration: none;
   cursor: pointer;
+
+  &--reset {
+    background-color: $base-white;
+    color: $base-primary;
+  }
+
+  &--order {
+    gap: 6px;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 20px;
+      height: 16px;
+      background-image: url("../../img/icons/stack.svg#card-icon");
+    }
+  }
 }
 

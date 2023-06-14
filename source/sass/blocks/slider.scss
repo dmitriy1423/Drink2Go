@@ -19,21 +19,21 @@
   padding: 310px 20px 60px;
 
   &--flat-white {
-    background-image: url("../../img/flat-white-mobile.png");
+    background-image: image-set("../../img/flat-white-mobile@1x.webp" 1x, "../../img/flat-white-mobile@1x.png" 1x, "../../img/flat-white-mobile@2x.webp" 2x, "../../img/flat-white-mobile@2x.png" 2x);
     background-repeat: no-repeat;
     background-position: center 30px;
     background-color: $flat-white;
   }
 
   &--lavender-latte {
-    background-image: url("../../img/lavender-mobile.png");
+    background-image: image-set("../../img/lavender-mobile@1x.webp" 1x, "../../img/lavender-mobile@1x.png" 1x, "../../img/lavender-mobile@2x.webp" 2x, "../../img/lavender-mobile@2x.png" 2x);
     background-repeat: no-repeat;
     background-position: center 30px;
     background-color: $lavender-latte;
   }
 
   &--espresso {
-    background-image: url("../../img/espresso-mobile.png");
+    background-image: image-set("../../img/espresso-mobile@1x.webp" 1x, "../../img/espresso-mobile@1x.png" 1x, "../../img/espresso-mobile@2x.webp" 2x, "../../img/espresso-mobile@2x.png" 2x);
     background-repeat: no-repeat;
     background-position: center 30px;
     background-color: $espresso;
@@ -58,19 +58,19 @@
 
     &--flat-white {
       &::before {
-        background-image: url("../../img/flat-white-tablet.png");
+        background-image: image-set("../../img/flat-white-tablet@1x.webp" 1x, "../../img/flat-white-tablet@1x.png" 1x, "../../img/flat-white-tablet@2x.webp" 2x, "../../img/flat-white-tablet@2x.png" 2x);
       }
     }
 
     &--lavender-latte {
       &::before {
-        background-image: url("../../img/lavender-tablet.png");
+        background-image: image-set("../../img/lavender-tablet@1x.webp" 1x, "../../img/lavender-tablet@1x.png" 1x, "../../img/lavender-tablet@2x.webp" 2x, "../../img/lavender-tablet@2x.png" 2x);
       }
     }
 
     &--espresso {
       &::before {
-        background-image: url("../../img/espresso-tablet.png");
+        background-image: image-set("../../img/espresso-tablet@1x.webp" 1x, "../../img/espresso-tablet@1x.png" 1x, "../../img/espresso-tablet@2x.webp" 2x, "../../img/espresso-tablet@2x.png" 2x);
       }
     }
   }
@@ -84,17 +84,17 @@
     }
 
     &--flat-white {
-      background-image: url("../../img/flat-white-desktop.png");
+      background-image: image-set("../../img/flat-white-desktop@1x.webp" 1x, "../../img/flat-white-desktop@1x.png" 1x, "../../img/flat-white-desktop@2x.webp" 2x, "../../img/flat-white-desktop@2x.png" 2x);
       background-position: 40px 30px;
     }
 
     &--lavender-latte {
-      background-image: url("../../img/lavender-desktop.png");
+      background-image: image-set("../../img/lavender-desktop@1x.webp" 1x, "../../img/lavender-desktop@1x.png" 1x, "../../img/lavender-desktop@2x.webp" 2x, "../../img/lavender-desktop@2x.png" 2x);
       background-position: 40px 30px;
     }
 
     &--espresso {
-      background-image: url("../../img/espresso-desktop.png");
+      background-image: image-set("../../img/espresso-desktop@1x.webp" 1x, "../../img/espresso-desktop@1x.png" 1x, "../../img/espresso-desktop@2x.webp" 2x, "../../img/espresso-desktop@2x.png" 2x);
       background-position: 40px 30px;
     }
   }
