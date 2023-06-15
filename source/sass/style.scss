@@ -1,4 +1,6 @@
 /* GLOBAL */
+@import "global/leaflet";
+@import "global/nouislider";
 @import "global/variables";
 @import "global/global";
 @import "global/fonts";
@@ -16,3 +18,6 @@
 @import "blocks/form";
 @import "blocks/catalog";
 @import "blocks/product";
+@import "blocks/map";
+@import "blocks/social";
+@import "blocks/footer";

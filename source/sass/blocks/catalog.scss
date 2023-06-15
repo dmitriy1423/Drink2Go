@@ -150,7 +150,7 @@
 
 .catalog__select {
   box-sizing: border-box;
-  max-width: 165px;
+  width: 185px;
   padding: 4px 10px;
   font: inherit;
   border: none;
@@ -160,7 +160,7 @@
   background-image: url("../../img/icons/stack.svg#arrow-down-icon");
   background-repeat: no-repeat;
   background-size: 10px 6px;
-  background-position: right center;
+  background-position: right 10px center;
   cursor: pointer;
 }
 

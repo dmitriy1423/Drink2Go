@@ -67,22 +67,36 @@
 
   @media (min-width: $tablet-width) {
     position: static;
+    width: auto;
     /* width: auto;
     background-color: transparent;
     padding-top: 0; */
   }
 }
 
-.navigation--nojs {
-  position: static;
-  min-height: 0;
+.navigation--nojs .navigation__toggle {
+  /* position: static;
+  min-height: 0; */
+  display: none;
 }
 
 .navigation--nojs .navigation__list {
-  display: block;
-  position: static;
+  /* display: block;
+  position: static; */
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+  /* top: 60px; */
+  bottom: 0;
+  transform: translateY(100%);
+  background-color: $base-white;
 
   @media (min-width: $tablet-width) {
+    position: static;
     display: flex;
+    width: auto;
+    transform: none;
   }
 }
