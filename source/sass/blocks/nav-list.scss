@@ -24,7 +24,20 @@
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: #f0ebff;
+    background-color: $base-secondary;
+
+    @media (min-width: $tablet-width) {
+      content: none;
+    }
+  }
+
+  &:last-child::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $base-secondary;
 
     @media (min-width: $tablet-width) {
       content: none;
@@ -33,6 +46,7 @@
 }
 
 .nav-list__link {
+  position: relative;
   display: block;
   padding: 20px;
   font-size: 12px;
@@ -41,8 +55,36 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  &:active {
+    background-color: $base-secondary;
+  }
+
   @media (min-width: $tablet-width) {
     position: relative;
     padding: 32px 15px;
+
+    &--current {
+      color: $base-primary;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2%;
+        background-color: $base-primary;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      color: $base-primary;
+    }
+
+    &:active {
+      color: $base-primary;
+      background-color: $base-secondary;
+    }
   }
 }

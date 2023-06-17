@@ -1,0 +1,66 @@
+@import "../global/variables.scss";
+
+.noUi-connect {
+  box-shadow: none;
+  background-color: $primary-lighter;
+}
+
+.noUi-connects {
+  height: 4px;
+}
+
+.noUi-target {
+  box-shadow: none;
+  border: none;
+  background-color: $primary-lighter;
+}
+
+.noUi-handle::before,
+.noUi-handle::after {
+  box-shadow: none;
+  display: none;
+}
+
+.noUi-handle-lower,
+.noUi-handle-upper {
+  box-shadow: none;
+  background-color: $base-white;
+  border: 2px solid $primary-lighter;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    .noUi-touch-area::before {
+      background-color: rgba(120, 89, 207, 0.25);
+    }
+  }
+
+  &:active {
+    .noUi-touch-area::before {
+      background-color: $base-primary;
+    }
+  }
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 24px;
+  height: 24px;
+  right: -12px;
+  top: -9px;
+}
+
+.noUi-touch-area {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+  }
+}

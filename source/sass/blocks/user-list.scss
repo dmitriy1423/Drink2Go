@@ -27,6 +27,31 @@
   color: $base-black;
   text-decoration: none;
   text-transform: uppercase;
+
+  &:active {
+    background-color: $base-secondary;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 32px 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover,
+    &:focus {
+      color: $base-primary;
+
+      .user-list__icon {
+        fill: $base-primary;
+      }
+    }
+
+    &:active {
+      .user-list__icon {
+        fill: $base-primary;
+      }
+    }
+  }
 }
 
 .user-list__description {

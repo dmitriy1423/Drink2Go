@@ -17,17 +17,47 @@
   text-decoration: none;
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    background-color: $primary-lighter;
+  }
+
+  &:active {
+    background-color: $primary-darker;
+  }
+
+  &:disabled,
+  &[aria-disabled="true"] {
+    background-color: $base-gray;
+    cursor: auto;
+  }
+
   &--reset {
     background-color: $base-white;
     color: $base-primary;
+
+    &:hover,
+    &:focus {
+      color: $base-white;
+    }
+
+    &:disabled {
+      color: $base-white;
+      background-color: $light-gray;
+      cursor: auto;
+    }
   }
 
   &--order {
     gap: 6px;
     position: relative;
+    padding: 8px 20px;
+    font-size: 14px;
+    line-height: 20px;
 
     &::before {
       content: "";
+      /* position: absolute; */
       width: 20px;
       height: 16px;
       background-image: url("../../img/icons/stack.svg#card-icon");

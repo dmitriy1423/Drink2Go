@@ -1,3 +1,16 @@
+@import "../global/variables.scss";
+
+.logo {
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
 .logo__icon {
   display: block;
 }

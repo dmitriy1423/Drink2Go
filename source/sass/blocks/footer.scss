@@ -3,6 +3,7 @@
 .footer {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 
   @media (min-width: $tablet-width) {
     padding: 40px 20px;
@@ -19,7 +20,7 @@
 }
 
 .footer__inner-wrapper {
-  padding: 20px;
+  padding: 20px 20px 19px 24px;
 
   &--logo-and-social {
     display: flex;
@@ -107,7 +108,7 @@
     .footer__link {
       display: grid;
       grid-template-columns: 16px auto;
-      gap: 6px;
+      gap: 3px;
       padding: 0;
       font-weight: 400;
       font-size: 14px;
@@ -127,6 +128,15 @@
   color: $base-black;
   text-transform: uppercase;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $primary-lighter;
+  }
+
+  &:active {
+    color: $primary-darker;
+  }
 }
 
 .footer__icon {
@@ -151,4 +161,25 @@
   gap: 4px;
   color: $base-gray;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $base-primary;
+
+    .footer__copyright-icon {
+      fill: $base-primary;
+    }
+  }
+
+  &:active {
+    color: $primary-darker;
+
+    .footer__copyright-icon {
+      fill: $primary-darker;
+    }
+  }
+}
+
+.footer__copyright-icon {
+  fill: $base-gray;
 }

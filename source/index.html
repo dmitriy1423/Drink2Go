@@ -12,9 +12,9 @@
       <div class="header__logo-wrapper">
         <a class="header__logo logo" href="index.html">
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/big-logo.svg" width="170" height="36">
-            <source media="(min-width: 768px)" srcset="img/medium-logo.svg" width="82" height="36">
-            <img class="logo__icon" src="img/small-logo.svg" width="32" height="36" alt="Логотип Drink2Go.">
+            <source media="(min-width: 1440px)" srcset="img/icons/stack.svg#big-logo" width="170" height="36">
+            <source media="(min-width: 768px)" srcset="img/icons/stack.svg#medium-logo" width="82" height="36">
+            <img class="logo__icon" src="img/icons/stack.svg#small-logo" width="32" height="36" alt="Логотип Drink2Go.">
           </picture>
         </a>
         <span class="header__logo-description">
@@ -47,27 +47,21 @@
         <ul class="navigation__user-list user-list">
           <li class="user-list__item">
             <a class="user-list__link" href="#">
-              <svg class="navigation__icon" width="16" height="16" fill="defaultColor" role="img">
+              <svg class="user-list__icon" width="16" height="16" fill="defaultColor" role="img">
                 <use href="img/icons/stack.svg#account-icon"></use>
               </svg>
               <span class="user-list__description">
                 Войти
               </span>
-              <span class="visually-hidden">
-                Войти в аккаунт.
-              </span>
             </a>
           </li>
           <li class="user-list__item">
             <a class="user-list__link" href="#">
-              <svg class="navigation__icon" width="16" height="16" fill="defaultColor" role="img">
+              <svg class="user-list__icon" width="16" height="16" fill="defaultColor" role="img">
                 <use href="img/icons/stack.svg#basket-icon"></use>
               </svg>
               <span class="user-list__description">
                 Корзина
-              </span>
-              <span class="visually-hidden">
-                Корзина товаров.
               </span>
             </a>
           </li>
@@ -108,24 +102,6 @@
                 Заказать
               </a>
             </div>
-            <!-- <div class="slider__item-arrows-wrapper">
-              <button type="button" class="slider__item-arrow slider__item-arrow--left">
-                <svg class="slider__item-arrow-icon" width="20" height="20" fill="defaultColor" role="img">
-                  <use href="img/icons/stack.svg#arrow-left-icon"></use>
-                </svg>
-                <span class="visually-hidden">
-                  Предыдущий слайд.
-                </span>
-              </button>
-              <button type="button" class="slider__item-arrow slider__item-arrow--right">
-                <svg class="slider__item-arrow-icon" width="20" height="20" fill="defaultColor" role="img">
-                  <use href="img/icons/stack.svg#arrow-right-icon"></use>
-                </svg>
-                <span class="visually-hidden">
-                  Следующий слайд.
-                </span>
-              </button>
-            </div> -->
           </div>
           <div class="swiper-slide slider__item slider__item--lavender-latte">
             <span class="slider__text-badge">
@@ -240,20 +216,7 @@
                 <legend class="form__legend">
                   Цена
                 </legend>
-                <div class="form__range">
-                  <!-- <div class="form__range-bar">
-                    <button class="form__range-toggle form__range-toggle--min" type="button">
-                      <span class="visually-hidden">
-                        Уменьшить цену
-                      </span>
-                    </button>
-                    <button class="form__range-toggle form__range-toggle--max" type="button">
-                      <span class="visually-hidden">
-                        Увеличить цену
-                      </span>
-                    </button>
-                  </div> -->
-                </div>
+                <div class="form__range"></div>
                 <div class="form__input-wrapper">
                   <input class="form__input form__input--number form__input--min" type="number" name="min-price" min="0" max="100" step="1" placeholder="0" required>
                   <input class="form__input form__input--number form__input--max" type="number" name="max-price" min="0" max="100" step="1" placeholder="130" required>
@@ -339,20 +302,22 @@
           </form>
           <label class="catalog__label  catalog__label--select">
             Сортировка:
-            <select class="catalog__select">
-              <option value="default">
-                по умолчанию
-              </option>
-              <option value="expensive">
-                сначала дорогие
-              </option>
-              <option value="cheap">
-                сначала дешевые
-              </option>
-              <option value="hight-score">
-                высокий рейтинг
-              </option>
-            </select>
+            <div class="catalog__select-wrapper">
+              <select class="catalog__select" name="sort">
+                <option value="default">
+                  по умолчанию
+                </option>
+                <option value="expensive">
+                  сначала дорогие
+                </option>
+                <option value="cheap">
+                  сначала дешевые
+                </option>
+                <option value="hight-score">
+                  высокий рейтинг
+                </option>
+              </select>
+            </div>
           </label>
           <ul class="catalog__products-list">
             <li class="catalog__products-item product">
@@ -490,8 +455,8 @@
           </ul>
         </div>
         <ol class="catalog__pagination">
-          <li class="catalog__pagination-item catalog__pagination-item--prev">
-            <a class="catalog__pagination-link" href="#">
+          <li class="catalog__pagination-item">
+            <a class="catalog__pagination-link catalog__pagination-link--prev" href="#">
               <svg class="catalog__pagination-icon" width="10" height="10" fill="defaultColor" role="img">
                 <use href="img/icons/stack.svg#arrow-left-icon"></use>
               </svg>
@@ -505,8 +470,8 @@
               1
             </a>
           </li>
-          <li class="catalog__pagination-item catalog__pagination-item--current">
-            <span class="catalog__pagination-link">
+          <li class="catalog__pagination-item">
+            <span class="catalog__pagination-link catalog__pagination-link--current">
               2
             </span>
           </li>
@@ -515,8 +480,8 @@
               3
             </a>
           </li>
-          <li class="catalog__pagination-item catalog__pagination-item--next">
-            <a class="catalog__pagination-link" href="#">
+          <li class="catalog__pagination-item">
+            <a class="catalog__pagination-link catalog__pagination-link--next" href="#">
               <svg class="catalog__pagination-icon" width="10" height="10" fill="defaultColor" role="img">
                 <use href="img/icons/stack.svg#arrow-right-icon"></use>
               </svg>
@@ -539,8 +504,8 @@
         <div class="footer__logo-wrapper">
           <a class="footer__logo logo" href="index.html">
             <picture>
-              <source media="(min-width: 768px)" srcset="img/big-logo.svg" width="170" height="36">
-              <img class="logo__icon" src="img/medium-logo.svg" width="82" height="36" alt="Логотип Drink2Go.">
+              <source media="(min-width: 768px)" srcset="img/icons/stack.svg#big-logo" width="170" height="36">
+              <img class="logo__icon" src="img/icons/stack.svg#medium-logo" width="82" height="36" alt="Логотип Drink2Go.">
             </picture>
           </a>
           <span class="footer__logo-description">

@@ -13,8 +13,24 @@
 
 .social__icon {
   vertical-align: middle;
+  fill: $base-gray;
 }
 
 .social__link {
+  display: block;
   padding: 10px;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    background-color: $base-secondary;
+
+    .social__icon {
+      fill: $base-primary;
+    }
+  }
+
+  &:active {
+    background-color: rgba(120, 89, 207, 0.25);
+  }
 }

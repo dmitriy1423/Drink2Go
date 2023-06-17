@@ -4,8 +4,11 @@
 @import "global/variables";
 @import "global/global";
 @import "global/fonts";
+@import "nouislider/nouislider";
+@import "swiper/swiper";
 
 /* BLOCKS */
+@import "blocks/visually-hidden";
 @import "blocks/page";
 @import "blocks/button";
 @import "blocks/header";

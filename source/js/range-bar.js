@@ -1,42 +1,37 @@
 import './vendors/nouislider.js';
 
-function initRangeBar() { // создаем функцию инициализации слайдера
-  const range = document.querySelector('.form__range'); // Ищем слайдер
-  const inputMin = document.querySelector('.form__input--min'); // Ищем input с меньшим значнием
-  const inputMax = document.querySelector('.form__input--max'); // Ищем input с большим значнием
 
-  if (!range || !inputMin || !inputMax) return // если этих элементов нет, прекращаем выполнение функции, чтобы не было ошибок
+function initRangeBar() {
+  const range = document.querySelector('.form__range');
+  const inputMin = document.querySelector('.form__input--min');
+  const inputMax = document.querySelector('.form__input--max');
 
-  const inputs = [inputMin, inputMax]; // создаем массив из меньшего и большего значения
+  if (!range || !inputMin || !inputMax) return
 
-  noUiSlider.create(range, { // инициализируем слайдер
-      start: [20, 80], // устанавливаем начальные значения
-      connect: true, // указываем что нужно показывать выбранный диапазон
-      range: { // устанавливаем минимальное и максимальное значения
+  const inputs = [inputMin, inputMax];
+
+  noUiSlider.create(range, {
+      start: [20, 80],
+      connect: true,
+      range: {
         'min': 0,
         'max': 150
       },
-      step: 1, // шаг изменения значений
+      step: 1,
     }
   )
 
-  range.noUiSlider.on('update', function (values, handle) { // при изменений положения элементов управления слайдера изменяем соответствующие значения
+  range.noUiSlider.on('update', function (values, handle) {
     inputs[handle].value = parseInt(values[handle]);
   });
 
-  inputMin.addEventListener('change', function () { // при изменении меньшего значения в input - меняем положение соответствующего элемента управления
+  inputMin.addEventListener('change', function () {
     range.noUiSlider.set([this.value, null]);
   });
 
-  inputMax.addEventListener('change', function () { // при изменении большего значения в input - меняем положение соответствующего элемента управления
+  inputMax.addEventListener('change', function () {
     range.noUiSlider.set([null, this.value]);
   });
 }
-
-/* const init = () => {
-  rangeSliderInit() // запускаем функцию инициализации слайдера
-}
-
-window.addEventListener('DOMContentLoaded', init) */
 
 export default initRangeBar;
