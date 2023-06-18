@@ -32,6 +32,12 @@
     cursor: auto;
   }
 
+  &--submit {
+    @media (min-width: $desktop-width) {
+      padding: 8px 26px;
+    }
+  }
+
   &--reset {
     background-color: $base-white;
     color: $base-primary;
@@ -46,9 +52,15 @@
       background-color: $light-gray;
       cursor: auto;
     }
+
+    @media (min-width: $desktop-width) {
+      padding: 8px 34px;
+    }
   }
 
   &--order {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
     gap: 6px;
     position: relative;
     padding: 8px 20px;
@@ -57,7 +69,6 @@
 
     &::before {
       content: "";
-      /* position: absolute; */
       width: 20px;
       height: 16px;
       background-image: url("../../img/icons/stack.svg#card-icon");

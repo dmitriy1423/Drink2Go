@@ -1,18 +1,18 @@
 @import "../global/variables.scss";
 
 .header {
+  max-width: 3840px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   position: relative;
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
   color: $base-black;
   background-color: $base-white;
+
+  @media (min-width: 2000px) {
+    margin: 0 auto;
+  }
 }
 
 .header__logo-wrapper {

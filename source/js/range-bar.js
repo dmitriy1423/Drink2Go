@@ -1,4 +1,4 @@
-import './vendors/nouislider.js';
+/* import './vendors/nouislider.js'; */
 
 
 function initRangeBar() {

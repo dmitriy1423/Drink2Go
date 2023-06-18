@@ -7,8 +7,16 @@
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  gap: 20px;
-  max-width: 200px;
+  gap: 17px;
+  max-width: 160px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 20px;
+  }
 }
 
 .social__icon {

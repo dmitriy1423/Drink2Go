@@ -1,4 +1,4 @@
-import './vendors/leaflet.js';
+/* import './vendors/leaflet.js'; */
 
 function initLeaflet() {
   const mapOptions = {
