@@ -15,7 +15,6 @@ import { deleteAsync } from 'del';
 import browser from 'browser-sync';
 import bemlinter from 'gulp-html-bemlinter';
 import { htmlValidator } from "gulp-w3c-html-validator";
-import ghPages from 'gulp-gh-pages';
 
 const sass = gulpSass(dartSass);
 let isDevelopment = true;
@@ -115,11 +114,6 @@ function watchFiles () {
   gulp.watch('source/sass/**/*.scss', gulp.series(processStyles));
   gulp.watch('source/js/**/*.js', gulp.series(processScripts));
   gulp.watch('source/*.html', gulp.series(processMarkup, reloadServer));
-}
-
-export const gp = () => {
-  return gulp.src('build/**/*')
-    .pipe(ghPages());
 }
 
 function compileProject (done) {
