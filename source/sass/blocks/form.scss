@@ -50,34 +50,25 @@
   }
 
   &--inputs-radio {
-    .form__legend {
-      margin-bottom: 21px;
-
-      @media (min-width: $tablet-width) {
-        padding-right: 12px;
-        margin-bottom: 21px;
-      }
-
-      @media (min-width: $desktop-width) {
-        padding-right: 0;
-        margin-bottom: 21px;
-      }
-    }
-
     margin-bottom: 34px;
 
+    .form__legend {
+      margin-bottom: 21px;
+    }
+
     @media (min-width: $tablet-width) {
+      padding-right: 13px;
       margin-bottom: 29px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 0;
     }
   }
 
   &--inputs-checkbox {
     .form__legend {
       margin-bottom: 21px;
-
-      @media (min-width: $tablet-width) {
-        margin-bottom: 21px;
-      }
     }
   }
 
@@ -97,6 +88,7 @@
 .form__range {
   width: 280px;
   position: relative;
+  padding: 0 10px;
   margin-bottom: 36px;
   height: 2px;
   border-radius: 20px;
