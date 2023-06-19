@@ -18,6 +18,9 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 20px 30px;
     padding: 48px 40px 40px;
+  }
+
+  @media (min-width: 2000px) {
     margin: 0 auto;
   }
 }

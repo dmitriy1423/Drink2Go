@@ -1,5 +1,3 @@
-/* import './vendors/leaflet.js'; */
-
 function initLeaflet() {
   const mapOptions = {
     center: [59.968322, 30.317359],

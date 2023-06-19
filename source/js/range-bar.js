@@ -1,6 +1,3 @@
-/* import './vendors/nouislider.js'; */
-
-
 function initRangeBar() {
   const range = document.querySelector('.form__range');
   const inputMin = document.querySelector('.form__input--min');
@@ -11,11 +8,11 @@ function initRangeBar() {
   const inputs = [inputMin, inputMax];
 
   noUiSlider.create(range, {
-      start: [20, 80],
+      start: [0, 900],
       connect: true,
       range: {
         'min': 0,
-        'max': 150
+        'max': 1000
       },
       step: 1,
     }
