@@ -194,8 +194,9 @@
 
 .catalog__select-wrapper {
   position: relative;
-  align-items: center;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
