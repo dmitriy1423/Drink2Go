@@ -40,7 +40,7 @@
     background-color: $flat-white;
 
     .slider__item-wrapper::before {
-      background-image: image-set("../../img/flat-white-mobile@1x.webp" 1x, "../../img/flat-white-mobile@1x.png" 1x, "../../img/flat-white-mobile@2x.webp" 2x, "../../img/flat-white-mobile@2x.png" 2x);
+      background-image: image-set("../img/flat-white-mobile@1x.webp" 1x, "../img/flat-white-mobile@1x.png" 1x, "../img/flat-white-mobile@2x.webp" 2x, "../img/flat-white-mobile@2x.png" 2x);
     }
   }
 
@@ -48,7 +48,7 @@
     background-color: $lavender-latte;
 
     .slider__item-wrapper::before {
-      background-image: image-set("../../img/lavender-mobile@1x.webp" 1x, "../../img/lavender-mobile@1x.png" 1x, "../../img/lavender-mobile@2x.webp" 2x, "../../img/lavender-mobile@2x.png" 2x);
+      background-image: image-set("../img/lavender-mobile@1x.webp" 1x, "../img/lavender-mobile@1x.png" 1x, "../img/lavender-mobile@2x.webp" 2x, "../img/lavender-mobile@2x.png" 2x);
     }
   }
 
@@ -56,7 +56,7 @@
     background-color: $espresso;
 
     .slider__item-wrapper::before {
-      background-image: image-set("../../img/espresso-mobile@1x.webp" 1x, "../../img/espresso-mobile@1x.png" 1x, "../../img/espresso-mobile@2x.webp" 2x, "../../img/espresso-mobile@2x.png" 2x);
+      background-image: image-set("../img/espresso-mobile@1x.webp" 1x, "../img/espresso-mobile@1x.png" 1x, "../img/espresso-mobile@2x.webp" 2x, "../img/espresso-mobile@2x.png" 2x);
     }
   }
 
@@ -73,19 +73,19 @@
 
     &--flat-white {
       .slider__item-wrapper::before {
-        background-image: image-set("../../img/flat-white-tablet@1x.webp" 1x, "../../img/flat-white-tablet@1x.png" 1x, "../../img/flat-white-tablet@2x.webp" 2x, "../../img/flat-white-tablet@2x.png" 2x);
+        background-image: image-set("../img/flat-white-tablet@1x.webp" 1x, "../img/flat-white-tablet@1x.png" 1x, "../img/flat-white-tablet@2x.webp" 2x, "../img/flat-white-tablet@2x.png" 2x);
       }
     }
 
     &--lavender-latte {
       .slider__item-wrapper::before {
-        background-image: image-set("../../img/lavender-tablet@1x.webp" 1x, "../../img/lavender-tablet@1x.png" 1x, "../../img/lavender-tablet@2x.webp" 2x, "../../img/lavender-tablet@2x.png" 2x);
+        background-image: image-set("../img/lavender-tablet@1x.webp" 1x, "../img/lavender-tablet@1x.png" 1x, "../img/lavender-tablet@2x.webp" 2x, "../img/lavender-tablet@2x.png" 2x);
       }
     }
 
     &--espresso {
       .slider__item-wrapper::before {
-        background-image: image-set("../../img/espresso-tablet@1x.webp" 1x, "../../img/espresso-tablet@1x.png" 1x, "../../img/espresso-tablet@2x.webp" 2x, "../../img/espresso-tablet@2x.png" 2x);
+        background-image: image-set("../img/espresso-tablet@1x.webp" 1x, "../img/espresso-tablet@1x.png" 1x, "../img/espresso-tablet@2x.webp" 2x, "../img/espresso-tablet@2x.png" 2x);
       }
     }
   }
@@ -111,7 +111,7 @@
 
     &--flat-white {
       .slider__item-wrapper::before {
-        background-image: image-set("../../img/flat-white-desktop@1x.webp" 1x, "../../img/flat-white-desktop@1x.png" 1x, "../../img/flat-white-desktop@2x.webp" 2x, "../../img/flat-white-desktop@2x.png" 2x);
+        background-image: image-set("../img/flat-white-desktop@1x.webp" 1x, "../img/flat-white-desktop@1x.png" 1x, "../img/flat-white-desktop@2x.webp" 2x, "../img/flat-white-desktop@2x.png" 2x);
       }
 
       .slider__item-description {
@@ -121,13 +121,13 @@
 
     &--lavender-latte {
       .slider__item-wrapper::before {
-        background-image: image-set("../../img/lavender-desktop@1x.webp" 1x, "../../img/lavender-desktop@1x.png" 1x, "../../img/lavender-desktop@2x.webp" 2x, "../../img/lavender-desktop@2x.png" 2x);
+        background-image: image-set("../img/lavender-desktop@1x.webp" 1x, "../img/lavender-desktop@1x.png" 1x, "../img/lavender-desktop@2x.webp" 2x, "../img/lavender-desktop@2x.png" 2x);
       }
     }
 
     &--espresso {
       .slider__item-wrapper::before {
-        background-image: image-set("../../img/espresso-desktop@1x.webp" 1x, "../../img/espresso-desktop@1x.png" 1x, "../../img/espresso-desktop@2x.webp" 2x, "../../img/espresso-desktop@2x.png" 2x);
+        background-image: image-set("../img/espresso-desktop@1x.webp" 1x, "../img/espresso-desktop@1x.png" 1x, "../img/espresso-desktop@2x.webp" 2x, "../img/espresso-desktop@2x.png" 2x);
       }
     }
   }
