@@ -88,8 +88,7 @@
   z-index: 2;
   width: 100%;
   left: 0;
-  bottom: 0;
-  transform: translateY(100%);
+  top: 100%;
   background-color: $base-white;
 
   @media (min-width: $tablet-width) {

@@ -32,19 +32,13 @@
   border: none;
 
   &--inputs-number {
-    max-width: 280px;
     margin-bottom: 30px;
 
     .form__legend {
       margin-bottom: 30px;
     }
 
-    @media (min-width: $tablet-width) {
-      max-width: 223px;
-    }
-
     @media (min-width: $desktop-width) {
-      max-width: 318px;
       margin-bottom: 32px;
     }
   }
