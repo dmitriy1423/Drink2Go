@@ -1,0 +1,1 @@
+function initLeaflet(){const e=new L.map("map",{center:[59.968322,30.317359],zoom:18}),n=new L.TileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png");e.addLayer(n);const t={title:"MyLocation",clickable:!0,draggable:!1,icon:L.icon({iconUrl:"./img/icons/stack.svg#map-icon",iconSize:[38,50]})};new L.Marker([59.968322,30.317359],t).addTo(e)}export default initLeaflet;
