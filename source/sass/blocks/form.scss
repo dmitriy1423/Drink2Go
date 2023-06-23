@@ -155,7 +155,7 @@
 .form__input {
   &--number {
     box-sizing: border-box;
-    max-width: 118px;
+    width: 118px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -196,12 +196,12 @@
     }
 
     @media (min-width: $tablet-width) {
-      max-width: 87px;
+      width: 87px;
       padding: 6px 15px;
     }
 
     @media (min-width: $desktop-width) {
-      max-width: 134px;
+      width: 134px;
       padding: 6px 36px;
     }
   }
