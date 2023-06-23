@@ -215,13 +215,13 @@
       padding-left: 33px;
     }
 
-    &:not(:disabled) + .form__input-description:hover::before,
-    &:not(:disabled) + .form__input-description:focus::before {
+    &:not(:disabled):not(:checked) + .form__input-description:hover::before,
+    &:not(:disabled):not(:checked) + .form__input-description:focus::before {
       border: 2px solid $primary-lighter;
     }
 
-    &:not(:disabled) + .form__input-description:hover::after,
-    &:not(:disabled) + .form__input-description:focus::after {
+    &:not(:disabled):not(:checked) + .form__input-description:hover::after,
+    &:not(:disabled):not(:checked) + .form__input-description:focus::after {
       content: "";
       position: absolute;
       left: 4px;
@@ -279,8 +279,8 @@
       padding-left: 53px;
     }
 
-    &:not(:disabled) + .form__input-description:hover::before,
-    &:not(:disabled) + .form__input-description:focus::before {
+    &:not(:disabled):not(:checked) + .form__input-description:hover::before,
+    &:not(:disabled):not(:checked) + .form__input-description:focus::before {
       background-color: rgba(120, 89, 207, 0.25);
       border: 2px solid $primary-lighter;
     }
